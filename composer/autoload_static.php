@@ -67,6 +67,7 @@ class ComposerStaticInit67e7343dc0eb9827c51ed3f9fb7807a0
         ),
         'P' => 
         array (
+            'Pusher\\' => 7,
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
@@ -231,6 +232,10 @@ class ComposerStaticInit67e7343dc0eb9827c51ed3f9fb7807a0
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Pusher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pusher/pusher-php-server/src',
         ),
         'Psy\\' => 
         array (
@@ -443,6 +448,8 @@ class ComposerStaticInit67e7343dc0eb9827c51ed3f9fb7807a0
         'App\\Contracts\\Entity\\User' => __DIR__ . '/../..' . '/app/Contracts/Entity/User.php',
         'App\\Contracts\\Repository\\UserRepoContract' => __DIR__ . '/../..' . '/app/Contracts/Repository/UserRepoContract.php',
         'App\\Eloquent\\User' => __DIR__ . '/../..' . '/app/Eloquent/User.php',
+        'App\\Events\\Event' => __DIR__ . '/../..' . '/app/Events/Event.php',
+        'App\\Events\\ShippingStatusUpdated' => __DIR__ . '/../..' . '/app/Events/ShippingStatusUpdated.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Facades\\UserRepo' => __DIR__ . '/../..' . '/app/Facades/UserRepo.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -457,10 +464,13 @@ class ComposerStaticInit67e7343dc0eb9827c51ed3f9fb7807a0
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Listeners\\EventListener' => __DIR__ . '/../..' . '/app/Listeners/EventListener.php',
+        'App\\Logger\\LogService' => __DIR__ . '/../..' . '/app/Logger/LogService.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+        'App\\Providers\\LoggerServiceProvider' => __DIR__ . '/../..' . '/app/Providers/LoggerServiceProvider.php',
         'App\\Providers\\RepoServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RepoServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\Repository\\UserRepo' => __DIR__ . '/../..' . '/app/Repository/UserRepo.php',
@@ -835,6 +845,7 @@ class ComposerStaticInit67e7343dc0eb9827c51ed3f9fb7807a0
         'Codeception\\Util\\Xml' => __DIR__ . '/..' . '/codeception/codeception/src/Codeception/Util/Xml.php',
         'Codeception\\Util\\XmlBuilder' => __DIR__ . '/..' . '/codeception/codeception/src/Codeception/Util/XmlBuilder.php',
         'Codeception\\Util\\XmlStructure' => __DIR__ . '/..' . '/codeception/codeception/src/Codeception/Util/XmlStructure.php',
+        'CreateFailedJobsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_27_034808_create_failed_jobs_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_06_033328_create_projects_table.php',
         'CreateSessionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_04_061514_create_sessions_table.php',
@@ -4406,6 +4417,9 @@ class ComposerStaticInit67e7343dc0eb9827c51ed3f9fb7807a0
         'Psy\\VersionUpdater\\GitHubChecker' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VersionUpdater/GitHubChecker.php',
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/Psy/VersionUpdater/NoopChecker.php',
+        'Pusher\\Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Pusher.php',
+        'Pusher\\PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherException.php',
+        'Pusher\\PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherInstance.php',
         'Ramsey\\Uuid\\BinaryUtils' => __DIR__ . '/..' . '/ramsey/uuid/src/BinaryUtils.php',
         'Ramsey\\Uuid\\Builder\\DefaultUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DefaultUuidBuilder.php',
         'Ramsey\\Uuid\\Builder\\DegradedUuidBuilder' => __DIR__ . '/..' . '/ramsey/uuid/src/Builder/DegradedUuidBuilder.php',
